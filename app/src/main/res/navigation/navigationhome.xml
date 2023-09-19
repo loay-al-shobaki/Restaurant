@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationhome"
+    app:startDestination="@id/action_home">
+
+    <fragment
+        android:id="@+id/action_home"
+        android:name="com.example.restaurant.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_action_home_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/action_search"
+        android:name="com.example.restaurant.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_action_search_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/action_ingredients"
+        android:name="com.example.restaurant.ingredients.IngredientsFragment"
+        android:label="fragment_ingredients"
+        tools:layout="@layout/fragment_ingredients" />
+    <fragment
+        android:id="@+id/action_setting"
+        android:name="com.example.restaurant.setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting">
+        <action
+            android:id="@+id/action_action_setting_to_mapUserFragment2"
+            app:destination="@id/mapUserFragment2" />
+        <action
+            android:id="@+id/action_action_setting_to_mainActivity"
+            app:destination="@id/mainActivity" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.restaurant.recipe_details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details">
+
+        <argument
+            android:name="data_recipe"
+            app:argType="com.example.restaurant.search.model.Recipe"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_detailsFragment_to_action_home"
+            app:destination="@id/action_home" />
+        <action
+            android:id="@+id/action_detailsFragment_to_action_search"
+            app:destination="@id/action_search" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/action_cart"
+        android:name="com.example.restaurant.Cart.CartFragment"
+        android:label="fragmen_cart"
+        tools:layout="@layout/fragmen_cart">
+        <action
+            android:id="@+id/action_action_cart_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapUserFragment2"
+        android:name="com.example.restaurant.map.MapUserFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.restaurant.map.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.restaurant.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+
+
+</navigation>

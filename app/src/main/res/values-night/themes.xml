@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <item name="colorSecondaryContainer">@color/colorPrimary</item>
+
+        <item name="colorOnSecondaryContainer">@color/colorOnSecondaryContainer</item>
+
+        <item name="android:colorBackground">@color/colorBackground</item>
+
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+
+        <item name="colorSurface">@color/colorSurface</item>
+
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+
+        <item name="colorSurfaceVariant">@color/colorSurfaceVariant</item>
+
+        <item name="colorOnSurfaceVariant">@color/bottom_icon_color</item>
+
+        <item name="android:statusBarColor">@color/colorBackground</item>
+
+        <item name="android:windowLightStatusBar">false</item>
+
+
+    </style>
+</resources>

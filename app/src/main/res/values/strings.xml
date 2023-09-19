@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Restaurant</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total_time_in_minutes">45 min</string>
+    <string name="recipe_name">food name long longsssss</string>
+    <string name="total_time_in_munites">25</string>
+    <string name="cuisine">Mexican</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EditTextDefaultStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_marginHorizontal">@dimen/_16dp</item>
+        <item name="android:background">@drawable/selector_edit_text</item>
+        <item name="android:drawablePadding">@dimen/_8dp</item>
+        <item name="android:padding">@dimen/_16dp</item>
+        <item name="android:textAppearance">@style/HintTextDefaultStyle</item>
+        <item name="android:drawableTint">@color/secondary_text</item>
+    </style>
+
+
+</resources>

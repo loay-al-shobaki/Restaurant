@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="neutralVariant60">#939094</color>
+
+    <color name="neutralVariant30">#484649</color>
+
+    <color name="colorPrimary">#2D2D2D</color>
+
+    <color name="colorOnPrimary">#FFFCFD</color>
+
+    <color name="colorSecondary">#F6F6F6</color>
+
+    <color name="colorOnSecondary">#252324</color>
+
+    <color name="colorSecondaryContainer">#5E121212</color>
+
+    <color name="colorOnSecondaryContainer">#2D2D2D</color>
+
+    <color name="background">#F6F6F6</color>
+
+    <color name="colorOnBackground">#1C1B1F</color>
+    <color name="colorBackground">#F6F6F6</color>
+    <color name="colorSurface">#D8D8D8</color>
+
+    <color name="colorOnSurface">#1C1B1F</color>
+
+    <color name="colorSurfaceVariant">#E9E9E9</color>
+
+    <color name="colorOnSurfaceVariant">#C72D2D2D</color>
+
+    <color name="colorOutline">#938F99</color>
+
+    <color name="bottom_icon_color">#5E1C1B1F</color>
+
+    <color name="bottom_nav_text_color">#DE1C1B1F</color>
+    <color name="bottom_nav_background_color">#F6F6F6</color>
+
+    <color name="secondary_text">#99000000</color>
+    <color name="tab_text_selected">#DEFFFFFF</color>
+    <color name="tab_text_unselected">#DE1C1B1F</color>
+    <color name="tab_unselected">#F2F2F2</color>
+    <color name="tab_selected">#2D2D2D</color>
+
+</resources>

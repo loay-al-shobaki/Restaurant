@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/largeSpace"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_30_percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="331dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_20_percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="250dp" />
+
+    <ImageView
+        android:id="@+id/image_view_recipe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toTopOf="@id/guideline_30_percent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view_gradient"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/details_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline_30_percent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_20_percent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:chipSpacingHorizontal="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_recipe_name">
+
+        <TextView
+            android:id="@+id/text_view_time_required"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/roboto"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="@dimen/smallMargin"
+            android:text="50 min"
+            android:textColor="@color/colorSecondaryContainer"
+            android:textSize="@dimen/sizeText"
+            app:drawableStartCompat="@drawable/clock"
+            app:drawableTint="@color/colorSecondaryContainer" />
+
+        <TextView
+            android:id="@+id/text_view_number_of_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/roboto"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="@dimen/smallMargin"
+            android:text="10 ingredients"
+            android:textColor="@color/colorSecondaryContainer"
+            android:textSize="@dimen/sizeText"
+            app:drawableStartCompat="@drawable/ic_eggs"
+            app:drawableTint="@color/colorSecondaryContainer" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/text_view_recipe_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normalSpace"
+        android:fontFamily="@font/roboto_medium"
+        android:text="masala_karela_recipe"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_30_percent" />
+
+    <TextView
+        android:id="@+id/text_view_native_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normalSpace"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="india"
+        android:textColor="@color/colorSecondaryContainer"
+        android:textSize="@dimen/font_sub_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_recipe_name" />
+
+
+    <Button
+        android:id="@+id/btn_add_to_cary"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Add TO Cart"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/view_gradient"
+        app:layout_constraintTop_toTopOf="@+id/guideline_20_percent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="54dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_add_to_cary"
+        app:layout_constraintEnd_toEndOf="@+id/btn_add_to_cary"
+        app:layout_constraintTop_toTopOf="@+id/btn_add_to_cary">
+
+    </View>
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:text="$20"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:text="+"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_plus"
+        app:layout_constraintEnd_toEndOf="@+id/btn_plus"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/btn_plus" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:text="-"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_minus"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/btn_minus"
+        app:layout_constraintTop_toTopOf="@+id/btn_minus" />
+
+    <TextView
+        android:id="@+id/txt_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toStartOf="@+id/btn_minus"
+        app:layout_constraintStart_toEndOf="@+id/btn_plus"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/square_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toEndOf="@+id/btn_add_to_cary"
+        app:layout_constraintTop_toTopOf="@+id/guideline_20_percent" />
+    <Button
+        android:id="@+id/btn_minus"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:background="@drawable/square_rounded"
+        android:text="Button"
+        android:clickable="true"
+        android:backgroundTint="@color/black"
+        android:elevation="44dp"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:background="@drawable/square_rounded"
+        android:text="+"
+        android:clickable="true"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+            <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_ingredients_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/tab_indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_native_country"
+        app:tabIndicator="@drawable/tab_indicator"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorColor="@color/tab_selected"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorGravity="stretch"
+        app:tabMode="fixed"
+        app:tabRippleColor="@color/tab_unselected"
+        app:tabSelectedTextColor="@color/tab_text_selected"
+        app:tabTextColor="@color/tab_text_unselected">
+
+
+
+    <com.google.android.material.tabs.TabItem
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:text="ingredients" />
+
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:text="instructions"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="353dp" />
+
+
+</com.google.android.material.tabs.TabLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
